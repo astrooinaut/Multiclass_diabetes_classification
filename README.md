@@ -15,6 +15,7 @@ The work evaluates multiple modelling strategies, including
 * feature selection
 * hyperparameter tuning
 * classical ML baselines
+  
 
 **Dataset**
 
@@ -25,6 +26,7 @@ Feature Categories
 * Self-reported lifestyle indicators
 * Health status and access-to-care variables
 
+
 **Target Variable**
 
 *Label	Class
@@ -33,6 +35,7 @@ Feature Categories
 *2	Diabetic
 
 The dataset is highly imbalanced, with pre-diabetics forming the smallest class.
+
 
 **Methods**
 
@@ -61,6 +64,7 @@ Models Evaluated
 	6.	One-vs-Rest Logistic Regression (LASSO)
 	7.	One-vs-One Logistic Regression
 
+
 **Evaluation Metrics**
 
 Due to class imbalance, performance was assessed using:
@@ -75,16 +79,18 @@ Key Focus
 
 **Accuracy alone was considered insufficient and potentially misleading.**
 
+
 **Results Summary**
 
-Model               | Accuracy | Recall | Precision| F1 Score | Notes
-Baseline NN         | 0.64	   | 0.85	| 0.81     | 0.81	  | Strong recall for minority class
-NN + LASSO	        | 0.65	   |—	    |—	       |—	      | No meaningful improvement
-Tuned NN	        | 0.68	   |—	    |—	       |—	      | ROC-AUC 0.84
-XGBoost (tuned)     | 0.84	   | 0.84	| 0.80	   | 0.81	  | Best overall model
-XGBoost + LASSO     | 0.68	   | 0.68	| 0.83	   |0.73	  | Reduced performance
-OvR Logistic (LASSO)| 0.67	   |—	    |—	       |—	      | Competitive baseline
-OvO Logistic	    | 0.64	   |—	    |—	       |—	      | Lower performance
+* Model               | Accuracy | Recall | Precision| F1 Score | Notes
+* Baseline NN         | 0.64	   | 0.85	| 0.81     | 0.81	  | Strong recall for minority class
+* NN + LASSO	        | 0.65	   |—	    |—	       |—	      | No meaningful improvement
+* Tuned NN	        | 0.68	   |—	    |—	       |—	      | ROC-AUC 0.84
+* XGBoost (tuned)     | 0.84	   | 0.84	| 0.80	   | 0.81	  | Best overall model
+* XGBoost + LASSO     | 0.68	   | 0.68	| 0.83	   |0.73	  | Reduced performance
+* OvR Logistic (LASSO)| 0.67	   |—	    |—	       |—	      | Competitive baseline
+* OvO Logistic	    | 0.64	   |—	    |—	       |—	      | Lower performance
+
 
 **Key Findings**
 * Hyperparameter-tuned XGBoost achieved the strongest overall performance.
@@ -93,9 +99,11 @@ OvO Logistic	    | 0.64	   |—	    |—	       |—	      | Lower performance
 * Macro-averaged metrics are essential in imbalanced multiclass medical problems.
 * Pre-diabetic classification remains intrinsically difficult, even with optimal setups.
 
+
 **Technical Notes**
 	•	Python 3.10 was used due to instability observed in Python 3.14.
 	•	When using Keras Tuner, the correct tuned model must be explicitly loaded from the saved directory.
+
 
 **Technologies Used**
 	•	Python 3.10
@@ -107,9 +115,11 @@ OvO Logistic	    | 0.64	   |—	    |—	       |—	      | Lower performance
 	•	Pandas
 	•	Seaborn
 
+
 **Data Source**
 
 CDC Diabetes Health Indicators Dataset
+
 
 **Conclusion**
 
