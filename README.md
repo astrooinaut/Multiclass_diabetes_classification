@@ -16,7 +16,7 @@ The work evaluates multiple modelling strategies, including
 * hyperparameter tuning
 * classical ML baselines
   
-
+______________________________________________________________
 **Dataset**
 
 The dataset contains 35 features derived from healthcare statistics and lifestyle surveys of the U.S. population.
@@ -26,7 +26,7 @@ Feature Categories
 * Self-reported lifestyle indicators
 * Health status and access-to-care variables
 
-
+______________________________________________________________
 **Target Variable**
 
 *Label	Class
@@ -35,7 +35,7 @@ Feature Categories
 *2	Diabetic
 
 The dataset is highly imbalanced, with pre-diabetics forming the smallest class.
-
+______________________________________________________________
 
 **Methods**
 
@@ -64,7 +64,7 @@ Models Evaluated
 	6.	One-vs-Rest Logistic Regression (LASSO)
 	7.	One-vs-One Logistic Regression
 
-
+______________________________________________________________
 **Evaluation Metrics**
 
 Due to class imbalance, performance was assessed using:
@@ -79,7 +79,7 @@ Key Focus
 
 **Accuracy alone was considered insufficient and potentially misleading.**
 
-
+______________________________________________________________
 **Results Summary**
 
 * Model               | Accuracy | Recall | Precision| F1 Score | Notes
@@ -91,7 +91,7 @@ Key Focus
 * OvR Logistic (LASSO)| 0.67	   |—	    |—	       |—	      | Competitive baseline
 * OvO Logistic	    | 0.64	   |—	    |—	       |—	      | Lower performance
 
-
+______________________________________________________________
 **Key Findings**
 * Hyperparameter-tuned XGBoost achieved the strongest overall performance.
 * Neural networks with class weighting performed competitively, especially for recall-critical medical use cases.
@@ -99,11 +99,11 @@ Key Focus
 * Macro-averaged metrics are essential in imbalanced multiclass medical problems.
 * Pre-diabetic classification remains intrinsically difficult, even with optimal setups.
 
-
+______________________________________________________________
 **Technical Notes**
 	•	Python 3.10 was used due to instability observed in Python 3.14.
 	•	When using Keras Tuner, the correct tuned model must be explicitly loaded from the saved directory.
-
+______________________________________________________________
 
 **Technologies Used**
 	•	Python 3.10
@@ -115,11 +115,11 @@ Key Focus
 	•	Pandas
 	•	Seaborn
 
-
+______________________________________________________________
 **Data Source**
 
 CDC Diabetes Health Indicators Dataset
-
+______________________________________________________________
 
 **Conclusion**
 
