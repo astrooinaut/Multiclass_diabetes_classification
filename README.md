@@ -8,20 +8,22 @@ This project applies machine learning (ML) and deep learning (DL) methods to the
 * 1 = Pre-diabetic
 * 2 = Diabetic
 
-The primary objective is to understand the relationship between lifestyle, demographic factors, and diabetes status while addressing the challenges of class imbalance in multiclass medical prediction problems.
+The primary objective is to **understand the relationship between lifestyle, demographic factors, and diabetes status while addressing the challenges of class imbalance in multiclass medical prediction problems.**
 
-The work evaluates multiple modelling strategies, including neural networks (NN), feature selection, hyperparameter tuning, and classical ML baselines.
-
-⸻
+The work evaluates multiple modelling strategies, including 
+* neural networks (NN)
+* feature selection
+* hyperparameter tuning
+* classical ML baselines
 
 **Dataset**
 
 The dataset contains 35 features derived from healthcare statistics and lifestyle surveys of the U.S. population.
 
 Feature Categories
-	•	Demographic variables
-	•	Self-reported lifestyle indicators
-	•	Health status and access-to-care variables
+* Demographic variables
+* Self-reported lifestyle indicators
+* Health status and access-to-care variables
 
 **Target Variable**
 
