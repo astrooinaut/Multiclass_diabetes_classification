@@ -4,9 +4,9 @@
 **Overview**
 
 This project applies machine learning (ML) and deep learning (DL) methods to the CDC Diabetes Health Indicators Dataset to classify individuals into:
-	•	0 = Healthy
-	•	1 = Pre-diabetic
-	•	2 = Diabetic
+* 0 = Healthy
+* 1 = Pre-diabetic
+* 2 = Diabetic
 
 The primary objective is to understand the relationship between lifestyle, demographic factors, and diabetes status while addressing the challenges of class imbalance in multiclass medical prediction problems.
 
